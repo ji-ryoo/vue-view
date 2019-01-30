@@ -13,14 +13,14 @@ module.exports = {
     proxyTable: {},
 
     // Various Dev Server settings
-    host: process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',// can be overwritten by process.env.HOST
-    port: process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    host: process.env.IP   || process.env.VUEJS_SERVICE_HOST || '0.0.0.0',// can be overwritten by process.env.HOST
+    port: process.env.PORT || process.env.VUEJS_SERVICE_PORT || 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */
